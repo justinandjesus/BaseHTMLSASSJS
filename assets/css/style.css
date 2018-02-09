@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Georgia', sans-serif;
+  color: #fff;
+}
+
+* body {
+  font: 15px/1.5 Raleway, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+* body section#image {
+  position: relative;
+  height: 90vh;
+  background: url(../img/pic.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+* body section#image:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(43, 43, 43, 0.28);
+  opacity: 0.5;
+}
+
+* body section#image .firstClick {
+  position: absolute;
+  font-size: 60px;
+  color: #fff;
+  top: 79vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
